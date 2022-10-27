@@ -60,3 +60,57 @@ WHERE city LIKE 'a%'
       OR city LIKE 'e%'
        OR city LIKE 'o%';
 
+# Weather Observation Station 7 [https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true]
+SELECT DISTINCT city
+FROM station
+WHERE city LIKE '%a' 
+    OR city LIKE '%i'
+     OR city LIKE '%u'
+      OR city LIKE '%e'
+       OR city LIKE '%o';
+
+# Weather Observation Station 8 [https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true]
+SELECT DISTINCT city
+FROM station
+WHERE LEFT(city, 1) IN ('a', 'e', 'i', 'o', 'u')
+    AND RIGHT(city, 1) IN ('a', 'e', 'i', 'o', 'u');
+
+# Weather Observation Station 9 [https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true]
+SELECT DISTINCT city
+FROM station
+WHERE LEFT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+
+# Weather Observation Station 10 [https://www.hackerrank.com/challenges/weather-observation-station-10/problem?isFullScreen=true]
+SELECT DISTINCT city
+FROM station
+WHERE RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+
+# Weather Observation Station 11 [https://www.hackerrank.com/challenges/weather-observation-station-11/problem?isFullScreen=true]
+SELECT DISTINCT city
+FROM station
+WHERE LEFT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+    OR RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u');
+
+# Weather Observation Station 12 [https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true]
+SELECT DISTINCT city
+FROM station
+WHERE LEFT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+    AND RIGHT(city, 1) NOT IN ('a', 'e', 'i', 'o', 'u');
+
+# Higher Than 75 Marks [https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true]
+SELECT name 
+FROM students 
+WHERE marks > 75
+ORDER BY RIGHT(name, 3), id ASC; # Who the F, ordered they query like this !?
+
+# Employee Names [https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true]
+SELECT name 
+FROM employee
+ORDER BY name ASC;
+
+# Employee Salaries [https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true]
+SELECT name
+FROM employee
+WHERE salary > 2000
+AND months < 10
+ORDER BY employee_id ASC;
