@@ -38,46 +38,46 @@ FROM employee WHERE (salary*months) IN
     FROM employee
 )
 
-Weather Observation Station 2 [https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true]
+# Weather Observation Station 2 [https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true]
 SELECT ROUND(SUM(lat_n), 2), ROUND(SUM(long_w), 2)
 FROM station
 
-Weather Observation Station 13 [https://www.hackerrank.com/challenges/weather-observation-station-13/problem?isFullScreen=true]
+# Weather Observation Station 13 [https://www.hackerrank.com/challenges/weather-observation-station-13/problem?isFullScreen=true]
 SELECT ROUND(SUM(lat_n), 4)
 FROM station
 WHERE lat_n > 38.7880 AND lat_n < 137.2345
 
-Weather Observation Station 14 [https://www.hackerrank.com/challenges/weather-observation-station-14/problem?isFullScreen=true]
+# Weather Observation Station 14 [https://www.hackerrank.com/challenges/weather-observation-station-14/problem?isFullScreen=true]
 SELECT ROUND(MAX(lat_n), 4)
 FROM station
 WHERE lat_n < 137.2345
 
-Weather Observation Station 15 [https://www.hackerrank.com/challenges/weather-observation-station-15/problem?isFullScreen=true]
+# Weather Observation Station 15 [https://www.hackerrank.com/challenges/weather-observation-station-15/problem?isFullScreen=true]
 SELECT ROUND(long_w, 4)
 FROM station
 WHERE lat_n < 137.2345
 ORDER BY lat_n DESC
 LIMIT 1
 
-Weather Observation Station 16 [https://www.hackerrank.com/challenges/weather-observation-station-16/problem?isFullScreen=true]
+# Weather Observation Station 16 [https://www.hackerrank.com/challenges/weather-observation-station-16/problem?isFullScreen=true]
 SELECT ROUND(lat_n, 4)
 FROM station
 WHERE lat_n > 38.7780
 ORDER BY lat_n ASC
 LIMIT 1
 
-Weather Observation Station 17 [https://www.hackerrank.com/challenges/weather-observation-station-16/problem?isFullScreen=true]
+# Weather Observation Station 17 [https://www.hackerrank.com/challenges/weather-observation-station-16/problem?isFullScreen=true]
 SELECT ROUND(long_w, 4)
 FROM station
 WHERE lat_n > 38.7780
 ORDER BY lat_n ASC
 LIMIT 1
 
-Weather Observation Station 18 [https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true]
+# Weather Observation Station 18 [https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true]
 SELECT ROUND(ABS(MIN(lat_n) - MAX(lat_n)) + ABS(MIN(long_w) - MAX(long_w)), 4)
 FROM station
 
-Weather Observation Station 19 [https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true]
+# Weather Observation Station 19 [https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true]
 SELECT ROUND(
     SQRT(
         POWER(MAX(lat_n) - MIN(lat_n), 2) + POWER(MAX(long_w) - MIN(long_w), 2)
@@ -85,4 +85,4 @@ SELECT ROUND(
 )
 FROM station
 
-Weather Observation Station 20 [https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true]
+# Weather Observation Station 20 [https://www.hackerrank.com/challenges/weather-observation-station-20/problem?isFullScreen=true]
